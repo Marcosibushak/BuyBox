@@ -1,0 +1,2 @@
+C:\Users\Marcos\Dropbox\BuyBox\ibushak\Ibushak.Productos.UI\obj\Release\Ibushak.Productos.UI.csprojResolveAssemblyReference.cache
+C:\Users\Marcos\Dropbox\BuyBox\ibushak\Ibushak.Productos.UI\obj\Release\Ibushak.Productos.UI.dll.licenses

@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC0EFEC5-0E42-4C32-83F2-9D610ED63468}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ibushak.Productos.Core.DAL</RootNamespace>
+    <AssemblyName>Ibushak.Productos.Core.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IbushakProductosContext.cs" />
+    <Compile Include="Migrations\201707192340264_InitialCreate.cs" />
+    <Compile Include="Migrations\201707192340264_InitialCreate.Designer.cs">
+      <DependentUpon>201707192340264_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707242218438_CreaTablasProducto.cs" />
+    <Compile Include="Migrations\201707242218438_CreaTablasProducto.Designer.cs">
+      <DependentUpon>201707242218438_CreaTablasProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707272334490_AjustesTiposdeDatos.cs" />
+    <Compile Include="Migrations\201707272334490_AjustesTiposdeDatos.Designer.cs">
+      <DependentUpon>201707272334490_AjustesTiposdeDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708021908461_AjusteCampoActualizacion.cs" />
+    <Compile Include="Migrations\201708021908461_AjusteCampoActualizacion.Designer.cs">
+      <DependentUpon>201708021908461_AjusteCampoActualizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708101654100_CreacionUsuarios.cs" />
+    <Compile Include="Migrations\201708101654100_CreacionUsuarios.Designer.cs">
+      <DependentUpon>201708101654100_CreacionUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708141643052_AjusteTamañoCampoCaracteristicas.cs" />
+    <Compile Include="Migrations\201708141643052_AjusteTamañoCampoCaracteristicas.Designer.cs">
+      <DependentUpon>201708141643052_AjusteTamañoCampoCaracteristicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709011755066_AjusteTamañoTitle.cs" />
+    <Compile Include="Migrations\201709011755066_AjusteTamañoTitle.Designer.cs">
+      <DependentUpon>201709011755066_AjusteTamañoTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802091807227_se extiende campo de 250 a 512.cs" />
+    <Compile Include="Migrations\201802091807227_se extiende campo de 250 a 512.Designer.cs">
+      <DependentUpon>201802091807227_se extiende campo de 250 a 512.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802091844048_ActualizacionLongitudCampos.cs" />
+    <Compile Include="Migrations\201802091844048_ActualizacionLongitudCampos.Designer.cs">
+      <DependentUpon>201802091844048_ActualizacionLongitudCampos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802091903028_ActualizacionLongitudCampos2.cs" />
+    <Compile Include="Migrations\201802091903028_ActualizacionLongitudCampos2.Designer.cs">
+      <DependentUpon>201802091903028_ActualizacionLongitudCampos2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802091926052_ActualizacionLongitudCampos3.cs" />
+    <Compile Include="Migrations\201802091926052_ActualizacionLongitudCampos3.Designer.cs">
+      <DependentUpon>201802091926052_ActualizacionLongitudCampos3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802121706547_ActualizacionLongitudCampos4.cs" />
+    <Compile Include="Migrations\201802121706547_ActualizacionLongitudCampos4.Designer.cs">
+      <DependentUpon>201802121706547_ActualizacionLongitudCampos4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802262347599_CambioLongitudCaracteristicas.cs" />
+    <Compile Include="Migrations\201802262347599_CambioLongitudCaracteristicas.Designer.cs">
+      <DependentUpon>201802262347599_CambioLongitudCaracteristicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802280444427_CambioCaracteristicasTable.cs" />
+    <Compile Include="Migrations\201802280444427_CambioCaracteristicasTable.Designer.cs">
+      <DependentUpon>201802280444427_CambioCaracteristicasTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802280454185_CambioProductoLongitud.cs" />
+    <Compile Include="Migrations\201802280454185_CambioProductoLongitud.Designer.cs">
+      <DependentUpon>201802280454185_CambioProductoLongitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803141812421_CampoErrorNetsuite.cs" />
+    <Compile Include="Migrations\201803141812421_CampoErrorNetsuite.Designer.cs">
+      <DependentUpon>201803141812421_CampoErrorNetsuite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803161709274_AgregaCampoUpdate.cs" />
+    <Compile Include="Migrations\201803161709274_AgregaCampoUpdate.Designer.cs">
+      <DependentUpon>201803161709274_AgregaCampoUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\ASINRepositorio.cs" />
+    <Compile Include="Repositorios\BuyBoxRepositorio.cs" />
+    <Compile Include="Repositorios\CaracteristicasRepositorio.cs" />
+    <Compile Include="Repositorios\ComentariosRespositorio.cs" />
+    <Compile Include="Repositorios\DimensionesPaqueteRepositorio.cs" />
+    <Compile Include="Repositorios\DimensionesRepositorio.cs" />
+    <Compile Include="Repositorios\ProductoRepositorio.cs" />
+    <Compile Include="Repositorios\Repositorio.cs" />
+    <Compile Include="Repositorios\ResumenRepositorio.cs" />
+    <Compile Include="Repositorios\SimilaresRepositorio.cs" />
+    <Compile Include="Repositorios\UPCRepositorio.cs" />
+    <Compile Include="Repositorios\UPCsRepositorio.cs" />
+    <Compile Include="Repositorios\UsuarioRepositorio.cs" />
+    <Compile Include="UnidadDeTrabajo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ibushak.Productos.Core.DomainModel\Ibushak.Productos.Core.DomainModel.csproj">
+      <Project>{2d6080e7-b92a-4b6a-adaa-2ab99724c09a}</Project>
+      <Name>Ibushak.Productos.Core.DomainModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201707192340264_InitialCreate.resx">
+      <DependentUpon>201707192340264_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707242218438_CreaTablasProducto.resx">
+      <DependentUpon>201707242218438_CreaTablasProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707272334490_AjustesTiposdeDatos.resx">
+      <DependentUpon>201707272334490_AjustesTiposdeDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708021908461_AjusteCampoActualizacion.resx">
+      <DependentUpon>201708021908461_AjusteCampoActualizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708101654100_CreacionUsuarios.resx">
+      <DependentUpon>201708101654100_CreacionUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708141643052_AjusteTamañoCampoCaracteristicas.resx">
+      <DependentUpon>201708141643052_AjusteTamañoCampoCaracteristicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709011755066_AjusteTamañoTitle.resx">
+      <DependentUpon>201709011755066_AjusteTamañoTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802091807227_se extiende campo de 250 a 512.resx">
+      <DependentUpon>201802091807227_se extiende campo de 250 a 512.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802091844048_ActualizacionLongitudCampos.resx">
+      <DependentUpon>201802091844048_ActualizacionLongitudCampos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802091903028_ActualizacionLongitudCampos2.resx">
+      <DependentUpon>201802091903028_ActualizacionLongitudCampos2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802091926052_ActualizacionLongitudCampos3.resx">
+      <DependentUpon>201802091926052_ActualizacionLongitudCampos3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802121706547_ActualizacionLongitudCampos4.resx">
+      <DependentUpon>201802121706547_ActualizacionLongitudCampos4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802262347599_CambioLongitudCaracteristicas.resx">
+      <DependentUpon>201802262347599_CambioLongitudCaracteristicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802280444427_CambioCaracteristicasTable.resx">
+      <DependentUpon>201802280444427_CambioCaracteristicasTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802280454185_CambioProductoLongitud.resx">
+      <DependentUpon>201802280454185_CambioProductoLongitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803141812421_CampoErrorNetsuite.resx">
+      <DependentUpon>201803141812421_CampoErrorNetsuite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803161709274_AgregaCampoUpdate.resx">
+      <DependentUpon>201803161709274_AgregaCampoUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

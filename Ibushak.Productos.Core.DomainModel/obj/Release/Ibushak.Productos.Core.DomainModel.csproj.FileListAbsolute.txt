@@ -1,0 +1,5 @@
+C:\Users\Marcos\Dropbox\BuyBox\ibushak\Ibushak.Productos.Core.DomainModel\bin\Release\Ibushak.Productos.Core.DomainModel.dll
+C:\Users\Marcos\Dropbox\BuyBox\ibushak\Ibushak.Productos.Core.DomainModel\bin\Release\Ibushak.Productos.Core.DomainModel.pdb
+C:\Users\Marcos\Dropbox\BuyBox\ibushak\Ibushak.Productos.Core.DomainModel\obj\Release\Ibushak.Productos.Core.DomainModel.csprojResolveAssemblyReference.cache
+C:\Users\Marcos\Dropbox\BuyBox\ibushak\Ibushak.Productos.Core.DomainModel\obj\Release\Ibushak.Productos.Core.DomainModel.dll
+C:\Users\Marcos\Dropbox\BuyBox\ibushak\Ibushak.Productos.Core.DomainModel\obj\Release\Ibushak.Productos.Core.DomainModel.pdb

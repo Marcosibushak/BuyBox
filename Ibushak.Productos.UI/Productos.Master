@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Productos.master.cs" Inherits="Ibushak.Productos.UI.Productos" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+    <title>Ibushak Amazon</title>
+    <link rel="stylesheet" href="~/Content/css/master.css" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div class="margen">
+            <table cellpadding="0" cellspacing="0"  style="width:auto;">
+              <tr valign="top">
+                <td align="left" style="width:25%; padding-left:104px; padding-top:13px">
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Content/imagenes/Ibushak.png" Height="45px"  BorderWidth="0" AlternateText=""/>
+                </td>
+                
+              </tr>
+            </table>
+        </div>
+        <div class="line-separator"></div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Ibushak.Productos.Amazon.BL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Ibushak_Productos_Amazon_BL_com_netsuite_webservices_NetSuiteService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.netsuite.com/services/NetSuitePort_2017_1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
